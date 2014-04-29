@@ -1,7 +1,13 @@
-Google Maps JavaScript API v/3
-Bing Maps AJAX V7
+API KEY PROCURED - Google Maps JavaScript API v/3
+API KEY PROCURED - Bing Maps AJAX V7
 
-Add Nav Bar
+NAV BAR ADDED
+GOOGLE MAPS BUTTONS ADDED
+	HYBRID
+	ROADMAP
+	SATELLITE
+	TERRAIN
+	
 Add Buttons
 	View Google Map
 	View Bing Map
@@ -18,7 +24,7 @@ Forms
 API Keys and GitHub
 	How do I specify the API key in an HTML script and use a .gitignore???
 
-Buttons for multiple iFrames
+Buttons for multiple maps
 Dropdowns for map selections
 
 Down the road....
