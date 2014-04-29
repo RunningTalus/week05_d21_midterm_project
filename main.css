@@ -2,8 +2,10 @@
 	background-color: darkgreen;
 	color: white;
 	padding-left: 20px;
+	margin-bottom: 20px;
 	position: fixed;
 }
+
 
 .container {
 	height: 100%;
@@ -18,8 +20,8 @@
 }
 
 #map-canvas {
-	margin-top: 100px;
-	height: 600px;
+	margin: 50px;
+	height: 500px;
 	width: 800px;
 }	
 
