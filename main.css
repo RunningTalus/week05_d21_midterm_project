@@ -1,5 +1,25 @@
-html, body, #map-canvas {
+.navbar {
+	background-color: darkgreen;
+	color: white;
+	padding-left: 20px;
+	position: fixed;
+}
+
+.container {
 	height: 100%;
-	margin: 0px;
-	padding: 0px
-	}
+	width: 100%;
+	background-color: peru;
+	margin-top: 50px;
+}
+
+.row {
+	height: 600px;
+	width: 100%;
+}
+
+#map-canvas {
+	margin-top: 100px;
+	height: 600px;
+	width: 800px;
+}	
+
