@@ -10,13 +10,11 @@ GOOGLE MAPS BUTTONS ADDED
 	
 Add Buttons
 	View Google Map
+	View ESRI ArcGIS Online
+	View Open Layers
+	View Nokia Here
 	View Bing Map
-	View Open Street Map
-		-via WebMap Framework
-			-Cloudmade Web Maps API + Leaflet
-			-OpenLayers + Leaflet
-	View ESRI ArcGIS Online Map
-
+			
 Forms
 	Add Address
 	Add Lat/Long
@@ -28,5 +26,4 @@ Buttons for multiple maps
 Dropdowns for map selections
 
 Down the road....
-	Telenav Scout API
-	Nokia Here Maps
+	Telenav Scout API???

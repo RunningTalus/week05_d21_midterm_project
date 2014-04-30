@@ -1,27 +1,26 @@
 .navbar {
 	background-color: darkgreen;
 	color: white;
-	padding-left: 20px;
+	left: 0;
 	margin-bottom: 20px;
+	padding-left: 20px;
 	position: fixed;
 	top: 0;
-	left: 0;
-	}
+}
 
 h1{
 	text-align: center;
 }
 
 .container {
-	height: 5000px;
-	width: 100%;
 	background-color: peru;
+	height: 5000px;
 	margin-top: 50px;
 	position: relative;
+	width: 100%;
 }
 
 .row {
-/*	height: 800px;*/
 	width: 100%;
 }
 
@@ -33,18 +32,43 @@ h2 {
 }
 
 #map-canvas {
-	margin: 10px;
-	height: 512px;
-	width: 100%;
 	border: dotted;
 	border-color: deeppink;
+	height: 512px;
+	margin: 10px;
+	width: 100%;
 }	
 
 #bing-canvas{
-	margin: 10px;
 	border: dotted;
 	border-color: orange;
 	height: 512px;
+	margin: 10px;
 	width: 100%;
 }
+
+#esri-canvas{
+	border: dotted;
+	border-color: chartreuse;
+	height: 512px;
+	margin: 10px;
+	width: 100%;
+}
+
+#open-canvas{
+	border: dotted;
+	border-color: green;
+	height: 512px;
+	margin: 10px;
+	width: 100%;
+}
+
+#here-canvas{
+	border: dotted;
+	border-color: blue;
+	height: 512px;
+	margin: 10px;
+	width: 100%;
+}
+
 
