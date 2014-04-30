@@ -19,7 +19,7 @@ $(document).on('ready', function(){
 		var mapOptions = {
 			center: new google.maps.LatLng(40.0079, -105.2348),
 			zoom: 2,
-			mapTypeId: google.maps.MapTypeId.ROADMAP
+			mapTypeId: google.maps.MapTypeId.SATELLITE
 		};
 
 		$('.maptype').on('click', function(){

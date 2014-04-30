@@ -39,15 +39,16 @@ h2 {
 	width: 100%;
 }	
 
-#bing{
+#bing {
 	border: dotted;
 	border-color: orange;
 	height: 512px;
+	position: relative;
 	margin: 10px;
 	width: 100%;
 }
 
-#esri{
+#esri {
 	border: dotted;
 	border-color: chartreuse;
 	height: 512px;
@@ -55,7 +56,7 @@ h2 {
 	width: 100%;
 }
 
-#open{
+#open {
 	border: dotted;
 	border-color: green;
 	height: 512px;
@@ -63,7 +64,7 @@ h2 {
 	width: 100%;
 }
 
-#here{
+#here {
 	border: dotted;
 	border-color: deeporchid;
 	height: 512px;
