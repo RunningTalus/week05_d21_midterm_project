@@ -31,7 +31,7 @@ h2 {
 	text-align: center;
 }
 
-#map-canvas {
+#google {
 	border: dotted;
 	border-color: deeppink;
 	height: 512px;
@@ -39,7 +39,7 @@ h2 {
 	width: 100%;
 }	
 
-#bing-canvas{
+#bing{
 	border: dotted;
 	border-color: orange;
 	height: 512px;
@@ -47,7 +47,7 @@ h2 {
 	width: 100%;
 }
 
-#esri-canvas{
+#esri{
 	border: dotted;
 	border-color: chartreuse;
 	height: 512px;
@@ -55,7 +55,7 @@ h2 {
 	width: 100%;
 }
 
-#open-canvas{
+#open{
 	border: dotted;
 	border-color: green;
 	height: 512px;
@@ -63,7 +63,7 @@ h2 {
 	width: 100%;
 }
 
-#here-canvas{
+#here{
 	border: dotted;
 	border-color: deeporchid;
 	height: 512px;

@@ -4,8 +4,7 @@ $(document).on('ready', function(){
 	var mapOptions;
 
 	if (navigator.geolocation) {
-	navigator.geolocation.getCurrentPosition(
-		function(position) {
+		navigator.geolocation.getCurrentPosition(function(position) {
 			var lat = position.coords.latitude;
 			var lng = position.coords.longitude;
 			var devCenter = new google.maps.LatLng(lat, lng);
@@ -19,7 +18,7 @@ $(document).on('ready', function(){
 
 		var mapOptions = {
 			center: new google.maps.LatLng(40.0079, -105.2348),
-			zoom: 16,
+			zoom: 2,
 			mapTypeId: google.maps.MapTypeId.ROADMAP
 		};
 
@@ -28,7 +27,7 @@ $(document).on('ready', function(){
 			map.setMapTypeId(google.maps.MapTypeId[mapType]);
 		});
 		
-		var mapElement = document.getElementById('map-canvas');
+		var mapElement = document.getElementById('google');
 		map = new google.maps.Map(mapElement, mapOptions);
 
 	};

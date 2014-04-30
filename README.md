@@ -11,6 +11,7 @@ GOOGLE MAPS BUTTONS ADDED
 Add Buttons
 	View Google Map
 	View ESRI ArcGIS Online
+		Create Buttons to change basemaps to "satellite", "hybrid", "topo", "gray", "oceans", "osm", "national-geographic".
 	View Open Layers
 	View Nokia Here
 	View Bing Map
