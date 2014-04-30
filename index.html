@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
 	<title>Midterm</title>
 	<link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="http://js.arcgis.com/3.9/js/esri/css/esri.css">
+	<link rel="stylesheet" type="text/css" href="http://js.arcgis.com/3.9/js/dojo/dijit/themes/claro/claro.css">	
 	<link rel="stylesheet" type="text/css" href="main.css">
 </head>
 
@@ -30,7 +32,7 @@
 			
 			<div class="row">
 				<div class="">
-					<h2>ESRI ArcGIS Online</h2>
+					<h2>ESRI</h2>
 					<div id="esri-canvas">
 					</div>
 				</div>	
@@ -61,9 +63,15 @@
 			</div>
 
 		</div>
-	<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 	<script src="main.js"></script>
-	<script src="bingmaps.js"></script>
+<!-- GOOGLE REQ's -->
+	<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+<!-- ESRI REQ's -->
+	<script src="http://js.arcgis.com/3.9/"></script>
+	<script src="esri.js"></script>
+
+<!-- <script src="bing.js"></script> -->
 </body>
 </html>
