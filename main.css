@@ -56,14 +56,6 @@ h2 {
 	width: 100%;
 }
 
-#open {
-	border: dotted;
-	border-color: green;
-	height: 512px;
-	margin: 10px;
-	width: 100%;
-}
-
 #nokia {
 	border: dotted;
 	border-color: deeporchid;
@@ -72,4 +64,11 @@ h2 {
 	width: 100%;
 }
 
+/*#open {
+	border: dotted;
+	border-color: green;
+	height: 512px;
+	margin: 10px;
+	width: 100%;
+}*/
 

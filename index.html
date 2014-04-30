@@ -20,10 +20,10 @@
 				<div class="">
 					<h2>Google Maps</h2>
 						<div class="btn-group">
-						<button type="button" class="btn-primary maptype" data-maptype="HYBRID">Hybrid</button>
-						<button type="button" class="btn-primary maptype" data-maptype="ROADMAP">Road</button>
-						<button type="button" class="btn-primary maptype" data-maptype="SATELLITE">Satellite</button>
-						<button type="button" class="btn-primary maptype" data-maptype="TERRAIN">Terrain</button>
+							<button type="button" class="btn-primary maptype" data-maptype="HYBRID">Hybrid</button>
+							<button type="button" class="btn-primary maptype" data-maptype="ROADMAP">Road</button>
+							<button type="button" class="btn-primary maptype" data-maptype="SATELLITE">Satellite</button>
+							<button type="button" class="btn-primary maptype" data-maptype="TERRAIN">Terrain</button>
 					</div>
 					<div id="google">
 					</div>
@@ -33,14 +33,32 @@
 			<div class="row">
 				<div class="">
 					<h2>ESRI</h2>
+					<div class="btn-group">
+						<button type="button" class="btn-primary maptype" data-maptype="satellite">Satellite</button>
+						<button type="button" class="btn-primary maptype" data-maptype="hybrid">Hybrid</button>
+						<button type="button" class="btn-primary maptype" data-maptype="topo">Topographic</button>
+						<button type="button" class="btn-primary maptype" data-maptype="gray">Gray</button>
+						<button type="button" class="btn-primary maptype" data-maptype="oceans">Oceans</button>
+						<button type="button" class="btn-primary maptype" data-maptype="osm">Open Street Map</button>
+						<button type="button" class="btn-primary maptype" data-maptype="national-geographic">National Geographic</button>
+					</div>
 					<div id="esri">
 					</div>
 				</div>	
 			</div>
 
 			<div class="row">
-				<div class="map">
+				<div class="">
 					<h2>Bing Maps</h2>
+					<div class="btn-group">
+							<button type="button" class="btn-primary maptype" data-maptype="Aerial">Aerial</button>
+							<button type="button" class="btn-primary maptype" data-maptype="Auto">Auto</button>
+							<button type="button" class="btn-primary maptype" data-maptype="Birdseye">Birdseye</button>
+							<button type="button" class="btn-primary maptype" data-maptype="CollinsBart">Collin's Bart</button>
+							<button type="button" class="btn-primary maptype" data-maptype="Mercator">Mercator</button>
+							<button type="button" class="btn-primary maptype" data-maptype="OrdnanceSurvey">Ordnance Survey</button>
+							<button type="button" class="btn-primary maptype" data-maptype="Road">Road</button>
+					</div>
 					<div id="bing">
 					</div>
 				</div>
@@ -49,25 +67,37 @@
 			<div class="row">
 				<div class="">
 					<h2>Nokia Here</h2>
+							<div class="btn-group">
+								<button type="button" class="btn-primary maptype" data-maptype="NORMAL">Normal</button>
+								<button type="button" class="btn-primary maptype" data-maptype="NORMAL_COMMUNITY">Normal Community</button>
+								<button type="button" class="btn-primary maptype" data-maptype="SATELLITE">Satellite</button>
+								<button type="button" class="btn-primary maptype" data-maptype="SATELLITE_COMMUNITY">Satellite Community</button>
+								<button type="button" class="btn-primary maptype" data-maptype="SMARTMAP">Smart Map</button>
+								<button type="button" class="btn-primary maptype" data-maptype="SMART_PT">Smart PT</button>
+								<button type="button" class="btn-primary maptype" data-maptype="TERRAIN">Terrain</button>
+								<button type="button" class="btn-primary maptype" data-maptype="TRAFFIC">Traffic</button>
+							</div>
 					<div id="nokia">
 					</div>
 				</div>	
 			</div>
 
-			<div class="row">
+<!-- 			<div class="row">
 				<div class="">
 					<h2>OpenLayers</h2>
 					<div id="open">
 					</div>
 				</div>	
-			</div>
+			</div> -->
 
 		</div>
+
 <!-- JAVASCRIPT & jQUERY REQ's -->
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 	<script src="main.js"></script>
 <!-- GOOGLE REQ's -->
 	<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+	<script src="google.js"></script>
 <!-- ESRI REQ's -->
 	<script src="http://js.arcgis.com/3.9/"></script>
 	<script src="esri.js"></script>

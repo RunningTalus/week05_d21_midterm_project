@@ -3,18 +3,40 @@ API KEY PROCURED - Bing Maps AJAX V7
 
 NAV BAR ADDED
 GOOGLE MAPS BUTTONS ADDED
-	HYBRID
-	ROADMAP
-	SATELLITE
-	TERRAIN
 	
-Add Buttons
+Add Buttons - 26 MAP TYPES BELOW
 	View Google Map
+		HYBRID
+		ROADMAP
+		SATELLITE
+		TERRAIN
 	View ESRI ArcGIS Online
-		Create Buttons to change basemaps to "satellite", "hybrid", "topo", "gray", "oceans", "osm", "national-geographic".
-	View Open Layers
-	View Nokia Here
+		satellite
+		hybrid
+		topo
+		gray
+		oceans
+		osm
+		national-geographic
 	View Bing Map
+		Aerial
+		Auto
+		Birdseye
+		CollinsBart
+		Mercator
+		OrdnanceSurvey
+		Road
+	View Nokia Here
+		NORMAL
+		NORMAL_COMMUNITY
+		SATELLITE
+		SATELLITE_COMMUNITY
+		SMARTMAP
+		SMART_PT
+		TERRAIN
+		TRAFFIC
+	<!-- View Open Layers -->
+
 			
 Forms
 	Add Address
