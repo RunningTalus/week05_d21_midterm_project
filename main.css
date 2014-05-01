@@ -64,11 +64,14 @@ h2 {
 	width: 100%;
 }
 
-/*#open {
+#mapquest {
 	border: dotted;
 	border-color: green;
 	height: 512px;
 	margin: 10px;
-	width: 100%;
-}*/
+	width: 1280px;
+	/*Both options below fail.*/
+	/*max-width: none !important;*/
+	/*width: 100%;*/
+}
 

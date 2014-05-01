@@ -4,7 +4,7 @@ $(document).on('ready', function(){
 	require(['esri/map','dojo/domReady!'], function(Map) { 
 		
 		map = new Map('esri', {
-			basemap: 'national-geographic',
+			basemap: 'satellite',
 			center: [-105.2348,40.0079],
 			zoom: 2
 		

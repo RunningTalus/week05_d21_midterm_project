@@ -26,7 +26,7 @@ Add Buttons - 26 MAP TYPES BELOW
 		Mercator
 		OrdnanceSurvey
 		Road
-	View Nokia Here
+	View Nokia Here Map
 		NORMAL
 		NORMAL_COMMUNITY
 		SATELLITE
@@ -35,6 +35,13 @@ Add Buttons - 26 MAP TYPES BELOW
 		SMART_PT
 		TERRAIN
 		TRAFFIC
+	View Mapquest Map
+		hyb
+		map
+		osm
+		sat
+
+
 	<!-- View Open Layers -->
 
 			
