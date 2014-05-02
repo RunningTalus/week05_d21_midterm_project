@@ -10,9 +10,20 @@ $(document).on('ready', function(){
 		
 		});
 
-		// console.log(map);
-		// console.log(typeof map);
-		//console.log(map[basemap]);
+		// //get title of basemap
+		// var currentBasemapName = webmapResponse.itemInfo.itemData.baseMap.title;
+		// console.log(currentBasemapName);
+		// var bmNameEqiv = bmDict[ currentBasemapName ];
+		// console.log(bmNameEqiv);           
+		// esriMap.removeLayer(webmapResponse.itemInfo.itemData.baseMap.baseMapLayers[0].layerObject);
+		// //just reset the base map so we can use setBaseMap later
+		// esriMap.setBasemap(bmNameEqiv);
+
+		// $('.maptype').on('click', function(){
+		// 	var mapType = $(this).attr('data-maptype'); 
+		// 	// console.log(mapType);
+			
+		// });
 
 	});
 

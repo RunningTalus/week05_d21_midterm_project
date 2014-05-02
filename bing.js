@@ -8,12 +8,17 @@ $(document).on('ready', function(){
 		center: new Microsoft.Maps.Location(40.0079, -105.2348),
 		disableZooming: true,
 		mapTypeId: Microsoft.Maps.MapTypeId.aerial,
-		zoom: 3
-
+		zoom: 3	
 	});
-
+	
+	// console.log(map.getMapTypeId());
 	
 
-});
+	// $('.maptype').on('click', function(){
+	// 	var mapType = $(this).attr('data-maptype');
+	// 	// console.log(mapType);
+	// 	setMapType("mapTypeId", mapType);
+	// });
 
-//map = new Microsoft.Maps.Map(document.getElementById('SDKmap'), {credentials: 'Your Bing Maps Key', disableZooming: true });
+	
+});
