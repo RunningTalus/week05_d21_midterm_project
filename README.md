@@ -38,7 +38,7 @@ Add Buttons - 26 MAP TYPES BELOW
 	View Mapquest Map
 		hyb
 		map
-		osm
+		osm  //cannot get OSM to load???, button is commented out in HTML.  
 		sat
 
 

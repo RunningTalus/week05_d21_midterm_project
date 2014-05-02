@@ -14,10 +14,19 @@ $(document).on('ready', function(){
        mtype:'sat',                              /*map type (map)*/
        zoomOnDoubleClick:false,										/*zoom in when double-clicking on map*/
        // size: {width: 100%, height: 512px}                  
-     };
- 
+    };
+
+ 			$('.maptype').on('click', function(){
+ 				var mapType = $(this).attr('data-maptype');
+ 				console.log(mapType);
+ 				window.map.setMapType(mapType);
+ 			});
+
+ 			window.map = new MQA.TileMap(options);
+ 			
+
      /*Construct an instance of MQA.TileMap with the options object*/
-     window.map = new MQA.TileMap(options);
+     
    });
 
 
