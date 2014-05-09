@@ -18,6 +18,7 @@ h1{
 	margin-top: 50px;
 	position: relative;
 	width: 100%;
+	border-left: 15px;
 }
 
 .row {
@@ -32,46 +33,55 @@ h2 {
 }
 
 #google {
-	border: dotted;
-	border-color: deeppink;
+	border: solid;
+	border-color: black;
 	height: 512px;
 	margin: 10px;
-	width: 100%;
+	width: 98%;
 }	
 
 #bing {
-	border: dotted;
-	border-color: orange;
+	border: solid;
+	border-color: black;
 	height: 512px;
 	position: relative;
-	margin: 10px;
-	width: 100%;
+	margin: 30px;
+	width: 98%;
 }
 
 #esri {
-	border: dotted;
-	border-color: chartreuse;
+	border: solid;
+	border-color: black;
 	height: 512px;
-	margin: 10px;
-	width: 100%;
+	margin: 30px;
+	position: relative;
+	width: 98%;
 }
 
 #nokia {
-	border: dotted;
-	border-color: deeporchid;
+	border: solid;
+	border-color: black;
 	height: 512px;
+	position: relative;
 	margin: 10px;
-	width: 100%;
+	width: 98%;
 }
 
 #mapquest {
-	border: dotted;
-	border-color: green;
+	border: solid;
+	border-color: black;
 	height: 512px;
 	margin: 10px;
+	position: relative;
 	width: 1280px;
 	/*Both options below fail.*/
 	/*max-width: none !important;*/
 	/*width: 100%;*/
+}
+
+.btn-primary {
+	border: 20px;
+	margin: 20px;
+	position: relative;
 }
 

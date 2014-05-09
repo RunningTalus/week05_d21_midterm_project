@@ -12,13 +12,13 @@ $(document).on('ready', function(){
        zoom:3,                                  /*initial zoom level of the map*/
        latLng:{lat:40.0079, lng:-105.2348},  /*center of map in latitude/longitude */
        mtype:'sat',                              /*map type (map)*/
-       zoomOnDoubleClick:false,										/*zoom in when double-clicking on map*/
+       zoomOnDoubleClick: true,										/*zoom in when double-clicking on map*/
        // size: {width: 100%, height: 512px}                  
     };
 
  			$('.maptype').on('click', function(){
  				var mapType = $(this).attr('data-maptype');
- 				console.log(mapType);
+ 				// console.log(mapType);
  				window.map.setMapType(mapType);
  			});
 

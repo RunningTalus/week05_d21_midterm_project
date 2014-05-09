@@ -11,7 +11,7 @@ $(document).on('ready', function(){
 			map.setCenter(devCenter);
 			map.setZoom(16);
 		});
-	};
+	}
 
 	var initialMap = function (){
 		google.maps.visualRefresh = true;
