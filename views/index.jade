@@ -1,0 +1,60 @@
+extends layout
+
+block content
+	h1 Welcome to MyMapNow.com!
+	.container
+		.row
+			.col-xs-6.col-sm-4.col-md-3.col-lg-2
+				h2 Google Maps
+				.btn-group
+					button.btn-primary.maptype(type='button', data-maptype='HYBRID') Hybrid
+					button.btn-primary.maptype(type='button', data-maptype='ROADMAP') Road
+					button.btn-primary.maptype(type='button', data-maptype='SATELLITE') Satellite
+					button.btn-primary.maptype(type='button', data-maptype='TERRAIN') Terrain
+				#google
+		.row
+			.col-xs-6.col-sm-4.col-md-3.col-lg-2
+				h2 Nokia Here Maps
+				.btn-group
+					button.btn-primary.maptype(type='button', data-maptype='NORMAL') Normal
+					button.btn-primary.maptype(type='button', data-maptype='NORMAL_COMMUNITY') Normal Community
+					button.btn-primary.maptype(type='button', data-maptype='SATELLITE') Satellite
+					button.btn-primary.maptype(type='button', data-maptype='SATELLITE_COMMUNITY') Satellite Community
+					button.btn-primary.maptype(type='button', data-maptype='SMARTMAP') Smart Map
+					button.btn-primary.maptype(type='button', data-maptype='SMART_PT') Smart PT
+					button.btn-primary.maptype(type='button', data-maptype='TERRAIN') Terrain
+					button.btn-primary.maptype(type='button', data-maptype='TRAFFIC') Traffic
+				#nokia
+		.row
+			.col-xs-6.col-sm-4.col-md-3.col-lg-2
+				h2 Mapquest
+				.btn-group
+					button.btn-primary.maptype(type='button', data-maptype='hyb') Hybrid
+					button.btn-primary.maptype(type='button', data-maptype='map') Map
+					button.btn-danger.maptype(type='button', data-maptype='osm') Open Street Map
+					button.btn-primary.maptype(type='button', data-maptype='sat') Satellite
+					#mapquest
+		.row
+			.col-xs-6.col-sm-4.col-md-3.col-lg-2
+				h2 Microsoft Bing Maps
+				.btn-group
+					button.btn-primary.maptype(type='button', data-maptype='Aerial') Aerial
+					button.btn-primary.maptype(type='button', data-maptype='Auto') Auto
+					button.btn-primary.maptype(type='button', data-maptype='Birdseye') Birdseye
+					button.btn-primary.maptype(type='button', data-maptype='CollinsBart') Collin's Bart
+					button.btn-primary.maptype(type='button', data-maptype='Mercator') Mercator
+					button.btn-primary.maptype(type='button', data-maptype='OrdnanceSurvey') Ordnance Survey
+					button.btn-primary.maptype(type='button', data-maptype='Road') Road
+				#bing
+		.row
+			.col-xs-6.col-sm-4.col-md-3.col-lg-2
+				h2 ESRI Maps
+				.btn-group
+					button.btn-primary.maptype(type='button', data-maptype='satellite') Satellite
+					button.btn-primary.maptype(type='button', data-maptype='hybrid') Hybrid
+					button.btn-primary.maptype(type='button', data-maptype='topo') Topographic
+					button.btn-primary.maptype(type='button', data-maptype='gray') Gray
+					button.btn-primary.maptype(type='button', data-maptype='oceans') Oceans
+					button.btn-primary.maptype(type='button', data-maptype='osm') Open Street Map
+					button.btn-primary.maptype(type='button', data-maptype='national-geographic') National Geographic
+				#esri

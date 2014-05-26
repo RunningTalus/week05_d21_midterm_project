@@ -55,5 +55,29 @@ API Keys and GitHub
 Buttons for multiple maps
 Dropdowns for map selections
 
-Down the road....
-	Telenav Scout API???
+Map Compare
+-Bing
+-ESRI
+-Google
+-Mapquest
+-Nokia
+
+Directions/Routing
+-ESRI
+-Google
+-Mapquest
+-Nokia
+-Skobbler 
+-TomTom
+
+Geocoding
+-ESRI
+-Google
+-Loqate
+-Mapquest
+-TomTom
+
+// on complete or on ready for each map type
+// asyncjs or other callback structure to delay loading each map until all maps are done.  
+// static mapping options from all providers
+

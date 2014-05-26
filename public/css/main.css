@@ -1,28 +1,43 @@
-.navbar {
-	background-color: darkgreen;
-	color: white;
-	left: 0;
-	margin-bottom: 20px;
-	padding-left: 20px;
-	position: fixed;
-	top: 0;
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) {
+
 }
 
-h1{
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
+
+h1 {
 	text-align: center;
 }
 
 .container {
-	background-color: peru;
+/*	background-color: peru;
 	height: 5000px;
 	margin-top: 50px;
 	position: relative;
 	width: 100%;
-	border-left: 15px;
+	border-left: 15px;*/
 }
 
 .row {
-	width: 100%;
+	/*width: 100%;*/
 }
 
 h2 {
@@ -33,42 +48,42 @@ h2 {
 }
 
 #google {
-	border: solid;
+/*	border: solid;
 	border-color: black;
 	height: 512px;
 	margin: 10px;
-	width: 98%;
+	width: 98%;*/
 }	
 
 #bing {
-	border: solid;
+/*	border: solid;
 	border-color: black;
 	height: 512px;
 	position: relative;
 	margin: 30px;
-	width: 98%;
+	width: 98%;*/
 }
 
 #esri {
-	border: solid;
+/*	border: solid;
 	border-color: black;
 	height: 512px;
 	margin: 30px;
 	position: relative;
-	width: 98%;
+	width: 98%;*/
 }
 
 #nokia {
-	border: solid;
+/*	border: solid;
 	border-color: black;
 	height: 512px;
 	position: relative;
 	margin: 10px;
-	width: 98%;
+	width: 98%;*/
 }
 
 #mapquest {
-	border: solid;
+/*	border: solid;
 	border-color: black;
 	height: 512px;
 	margin: 10px;
@@ -76,7 +91,7 @@ h2 {
 	width: 1280px;
 	/*Both options below fail.*/
 	/*max-width: none !important;*/
-	/*width: 100%;*/
+	/*width: 100%;*/*/
 }
 
 .btn-primary {
