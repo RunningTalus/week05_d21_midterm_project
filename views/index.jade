@@ -4,74 +4,102 @@ block content
 	h1 Welcome to MyMapNow.com!
 	.container
 		.row
-			.col-lg-6
-				span.map-number Number of maps to compare: 
-					a(href='#') 1 
-					a(href='#') 2 
-					a(href='#') 4 
-					a(href='#') 6 
-					a(href='#') 8 
-					a(href='#') 10 
-					a(href='#') 12 
-					a(href='#') 14 
-					a(href='#') 16 
-					a(href='#') 18 
-					a(href='#') 20 
-					a(href='#') 22 
-					a(href='#') 24 
-					a(href='#') 26 
+			.col-md-12
+				.radio-inline
+					label
+						input#optionsRadios1(type='radio', name='optionsRadios', value='option1')
+						| 1
+				.radio-inline
+					label
+						input#optionsRadios2(type='radio', name='optionsRadios', value='option2')
+						| 2
+				.radio-inline
+					label
+						input#optionsRadios4(type='radio', name='optionsRadios', value='option4')
+						| 4
+				.radio-inline
+					label
+						input#optionsRadios6(type='radio', name='optionsRadios', value='option6')
+						| 6
+				.radio-inline
+					label
+						input#optionsRadios8(type='radio', name='optionsRadios', value='option8')
+						| 8
+				.radio-inline
+					label
+						input#optionsRadios10(type='radio', name='optionsRadios', value='option10')
+						| 10
+				.radio-inline
+					label
+						input#optionsRadios12(type='radio', name='optionsRadios', value='option12')
+						| 12
+				.radio-inline
+					label
+						input#optionsRadios14(type='radio', name='optionsRadios', value='option14')
+						| 14
+				.radio-inline
+					label
+						input#optionsRadios16(type='radio', name='optionsRadios', value='option16')
+						| 16
+				.radio-inline
+					label
+						input#optionsRadios18(type='radio', name='optionsRadios', value='option18')
+						| 18
+				.radio-inline
+					label
+						input#optionsRadios20(type='radio', name='optionsRadios', value='option20')
+						| 20
+				.radio-inline
+					label
+						input#optionsRadios22(type='radio', name='optionsRadios', value='option22')
+						| 22
+				.radio-inline
+					label
+						input#optionsRadios24(type='radio', name='optionsRadios', value='option24')
+						| 24
+				.radio-inline
+					label
+						input#optionsRadios26(type='radio', name='optionsRadios', value='option26')
+						| 26
+		form
+			select(name='map-type')
+				option(value='Aerial') Bing Aerial
+				option(value='Auto') Bing Auto
+				option(value='Birdseye') Bing Birdseye
+				option(value='CollinsBart') Bing Collin's Bart
+				option(value='Mercator') Bing Mercator
+				option(value='OrdnanceSurvey') Bing Ordnance Survey
+				option(value='Road') Bing Road
+				option(value='gray') ESRI Gray
+				option(value='hybrid') ESRI Hybrid
+				option(value='national-geographic') ESRI National Geographic
+				option(value='oceans') ESRI Oceans
+				option(value='osm') ESRI Open Street Map
+				option(value='satellite') ESRI Satellite
+				option(value='topo') ESRI Topographic
+				option(value='HYBRID') Google Hybrid
+				option(value='ROAD') Google Road
+				option(value='SATELLITE') Google Satellite
+				option(value='TERRAIN') Google Terrain
+				option(value='hyb') Mapquest Hybrid
+				option(value='map') Mapquest Map
+				option(value='osm') Mapquest Open Street Map
+				option(value='sat') Mapquest Satellite
+				option(value='NORMAL') Nokia Normal
+				option(value='NORMAL_COMMUNITY') Nokia Normal Community
+				option(value='SATELLITE') Nokia Satellite
+				option(value='SATELLITE_COMMUNITY') Nokia Satellite Community
+				option(value='SMARTMAP') Nokia Smartmap
+				option(value='SMART_PT') Nokia Smart PT
+				option(value='TERRAIN') Nokia Terrain
+				option(value='TRAFFIC') Nokia Traffic
 		.row
 			.col-xs-6.col-sm-4.col-md-3.col-lg-2
-				h2 Google Maps
-				.btn-group
-					button.btn-primary.maptype(type='button', data-maptype='HYBRID') Hybrid
-					button.btn-primary.maptype(type='button', data-maptype='ROADMAP') Road
-					button.btn-primary.maptype(type='button', data-maptype='SATELLITE') Satellite
-					button.btn-primary.maptype(type='button', data-maptype='TERRAIN') Terrain
-				#google
 		.row
 			.col-xs-6.col-sm-4.col-md-3.col-lg-2
-				h2 Nokia Here Maps
-				.btn-group
-					button.btn-primary.maptype(type='button', data-maptype='NORMAL') Normal
-					button.btn-primary.maptype(type='button', data-maptype='NORMAL_COMMUNITY') Normal Community
-					button.btn-primary.maptype(type='button', data-maptype='SATELLITE') Satellite
-					button.btn-primary.maptype(type='button', data-maptype='SATELLITE_COMMUNITY') Satellite Community
-					button.btn-primary.maptype(type='button', data-maptype='SMARTMAP') Smart Map
-					button.btn-primary.maptype(type='button', data-maptype='SMART_PT') Smart PT
-					button.btn-primary.maptype(type='button', data-maptype='TERRAIN') Terrain
-					button.btn-primary.maptype(type='button', data-maptype='TRAFFIC') Traffic
-				#nokia
 		.row
 			.col-xs-6.col-sm-4.col-md-3.col-lg-2
-				h2 Mapquest
-				.btn-group
-					button.btn-primary.maptype(type='button', data-maptype='hyb') Hybrid
-					button.btn-primary.maptype(type='button', data-maptype='map') Map
-					button.btn-danger.maptype(type='button', data-maptype='osm') Open Street Map
-					button.btn-primary.maptype(type='button', data-maptype='sat') Satellite
-					#mapquest
 		.row
 			.col-xs-6.col-sm-4.col-md-3.col-lg-2
-				h2 Microsoft Bing Maps
-				.btn-group
-					button.btn-primary.maptype(type='button', data-maptype='Aerial') Aerial
-					button.btn-primary.maptype(type='button', data-maptype='Auto') Auto
-					button.btn-primary.maptype(type='button', data-maptype='Birdseye') Birdseye
-					button.btn-primary.maptype(type='button', data-maptype='CollinsBart') Collin's Bart
-					button.btn-primary.maptype(type='button', data-maptype='Mercator') Mercator
-					button.btn-primary.maptype(type='button', data-maptype='OrdnanceSurvey') Ordnance Survey
-					button.btn-primary.maptype(type='button', data-maptype='Road') Road
-				#bing
 		.row
 			.col-xs-6.col-sm-4.col-md-3.col-lg-2
-				h2 ESRI Maps
-				.btn-group
-					button.btn-primary.maptype(type='button', data-maptype='satellite') Satellite
-					button.btn-primary.maptype(type='button', data-maptype='hybrid') Hybrid
-					button.btn-primary.maptype(type='button', data-maptype='topo') Topographic
-					button.btn-primary.maptype(type='button', data-maptype='gray') Gray
-					button.btn-primary.maptype(type='button', data-maptype='oceans') Oceans
-					button.btn-primary.maptype(type='button', data-maptype='osm') Open Street Map
-					button.btn-primary.maptype(type='button', data-maptype='national-geographic') National Geographic
-				#esri
