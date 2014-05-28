@@ -40,63 +40,8 @@ h1 {
 	/*width: 100%;*/
 }
 
-h2 {
-	border: 20px;
-	margin: 20px;
-	padding: 20px;
-	text-align: center;
-}
-
-#google {
-/*	border: solid;
-	border-color: black;
-	height: 512px;
-	margin: 10px;
-	width: 98%;*/
-}	
-
-#bing {
-/*	border: solid;
-	border-color: black;
-	height: 512px;
-	position: relative;
-	margin: 30px;
-	width: 98%;*/
-}
-
-#esri {
-/*	border: solid;
-	border-color: black;
-	height: 512px;
-	margin: 30px;
-	position: relative;
-	width: 98%;*/
-}
-
-#nokia {
-/*	border: solid;
-	border-color: black;
-	height: 512px;
-	position: relative;
-	margin: 10px;
-	width: 98%;*/
-}
-
-#mapquest {
-/*	border: solid;
-	border-color: black;
-	height: 512px;
-	margin: 10px;
-	position: relative;
-	width: 1280px;
-	/*Both options below fail.*/
-	/*max-width: none !important;*/
-	/*width: 100%;*/*/
-}
-
-.btn-primary {
-	border: 20px;
-	margin: 20px;
-	position: relative;
+.map-form input[type=checkbox]{
+	float: left;
+	margin-right: 10px;
 }
 

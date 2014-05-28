@@ -2,9 +2,184 @@ extends layout
 
 block content
 	h1 Welcome to MyMapNow.com!
-	.container
+	.container-fluid
 		.row
-			.col-md-12
+			.col-xs-6.col-sm-4.col-md-3.col-lg-2.map-form
+				form(method='get')
+					div.form-group
+						label Load ALL 30 Vendor Maps
+							input(type='checkbox', name='all-vendors', value='all-vendors')
+					div.form-group
+						label Load ALL Bing Maps
+							input(type='checkbox', name='all-bing', value='all-bing')
+					div.form-group
+						label Bing Aerial
+							input(type='checkbox', name='bing', value='Aerial')
+					div.form-group
+						label Bing Auto
+							input(type='checkbox', name='bing', value='Auto')
+					div.form-group
+						label Bing Birdseye
+							input(type='checkbox', name='bing', value='Birdseye')
+					div.form-group
+						label Bing Collin's Bart
+							input(type='checkbox', name='bing', value='CollinsBart')
+					div.form-group
+						label Bing Mercator
+							input(type='checkbox', name='bing', value='Mercator')
+					div.form-group
+						label Bing Ordnance Survey
+							input(type='checkbox', name='bing', value='OrdnanceSurvey')
+					div.form-group
+						label Bing Road
+							input(type='checkbox', name='bing', value='Road')
+					br
+					div.form-group
+						label Load ALL ESRI Maps
+							input(type='checkbox', name='all-esri', value='all-esri')
+					div.form-group
+						label ESRI Gray
+							input(type='checkbox', name='esri', value='gray')
+					div.form-group
+						label ESRI Hybrid
+							input(type='checkbox', name='esri', value='hybrid')
+					div.form-group
+						label ESRI National Geographic
+							input(type='checkbox', name='esri', value='national-geographic')
+					div.form-group
+						label ESRI Oceans
+							input(type='checkbox', name='esri', value='oceans')
+					div.form-group
+						label ESRI Open Street Map
+							input(type='checkbox', name='esri', value='osm')
+					div.form-group
+						label ESRI Satellite
+							input(type='checkbox', name='esri', value='satellite')
+					div.form-group
+						label ESRI Topographic
+							input(type='checkbox', name='esri', value='topo')
+					br
+					div.form-group
+						label Load ALL Google Maps
+							input(type='checkbox', name='all-esri', value='all-esri')			
+					div.form-group
+						label Google Hybrid
+							input(type='checkbox', name='google', value='HYBRID')
+					div.form-group
+						label Google Road
+							input(type='checkbox', name='google', value='ROAD')
+					div.form-group
+						label Google Satellite
+							input(type='checkbox', name='google', value='SATELLITE')
+					div.form-group
+						label Google Terrain
+							input(type='checkbox', name='google', value='TERRAIN')
+					br
+					div.form-group
+						label Load ALL Mapquest Maps
+							input(type='checkbox', name='all-mapquest', value='all-mapquest')
+					div.form-group
+						label Mapquest Hybrid
+							input(type='checkbox', name='mapquest', value='hyb')
+					div.form-group
+						label Mapquest Map
+							input(type='checkbox', name='mapquest', value='map')
+					div.form-group
+						label Mapquest Open Street Map
+							input(type='checkbox', name='mapquest', value='osm')
+					div.form-group
+						label Mapquest Satellite
+							input(type='checkbox', name='mapquest', value='sat')
+					br
+					div.form-group
+						label Load ALL Nokia Maps
+							input(type='checkbox', name='all-nokia', value='all-nokia')
+					div.form-group
+						label Nokia Normal
+							input(type='checkbox', name='nokia', value='NORMAL')
+					div.form-group
+						label Nokia Normal Community
+							input(type='checkbox', name='nokia', value='NORMAL_COMMUNITY')
+					div.form-group
+						label Nokia Satellite
+							input(type='checkbox', name='nokia', value='SATELLITE')
+					div.form-group
+						label Nokia Satellite Community
+							input(type='checkbox', name='nokia', value='SATELLITE_COMMUNITY')
+					div.form-group
+						label Nokia Smartmap
+							input(type='checkbox', name='nokia', value='SMARTMAP')
+					div.form-group
+						label Nokia Smart PT
+							input(type='checkbox', name='nokia', value='SMART_PT')
+					div.form-group
+						label Nokia Terrain
+							input(type='checkbox', name='nokia', value='TERRAIN')
+					div.form-group
+						label Nokia Traffic
+							input(type='checkbox', name='nokia', value='TRAFFIC')
+					div.form-group
+						input(type='submit')
+		.row
+			.col-xs-6.col-sm-4.col-md-3.col-lg-2.map-dropdown Choose map type:
+				form
+					select(name='map-type')
+						option(name='bing' value='Aerial') Bing Aerial
+						option(name='bing' value='Auto') Bing Auto
+						option(name='bing' value='Birdseye') Bing Birdseye
+						option(name='bing' value='CollinsBart') Bing Collin's Bart
+						option(name='bing' value='Mercator') Bing Mercator
+						option(name='bing' value='OrdnanceSurvey') Bing Ordnance Survey
+						option(name='bing' value='Road') Bing Road
+						option(name='esri' value='gray') ESRI Gray
+						option(name='esri' value='hybrid') ESRI Hybrid
+						option(name='esri' value='national-geographic') ESRI National Geographic
+						option(name='esri' value='oceans') ESRI Oceans
+						option(name='esri' value='osm') ESRI Open Street Map
+						option(name='esri' value='satellite') ESRI Satellite
+						option(name='esri' value='topo') ESRI Topographic
+						option(name='google' value='HYBRID') Google Hybrid
+						option(name='google' value='ROAD') Google Road
+						option(name='google' value='SATELLITE') Google Satellite
+						option(name='google' value='TERRAIN') Google Terrain
+						option(name='mapquest' value='hyb') Mapquest Hybrid
+						option(name='mapquest' value='map') Mapquest Map
+						option(name='mapquest' value='osm') Mapquest Open Street Map
+						option(name='mapquest' value='sat') Mapquest Satellite
+						option(name='nokia' value='NORMAL') Nokia Normal
+						option(name='nokia' value='NORMAL_COMMUNITY') Nokia Normal Community
+						option(name='nokia' value='SATELLITE') Nokia Satellite
+						option(name='nokia' value='SATELLITE_COMMUNITY') Nokia Satellite Community
+						option(name='nokia' value='SMARTMAP') Nokia Smartmap
+						option(name='nokia' value='SMART_PT') Nokia Smart PT
+						option(name='nokia' value='TERRAIN') Nokia Terrain
+						option(name='nokia' value='TRAFFIC') Nokia Traffic
+						br
+						br
+		.row
+			.col-xs-6.col-sm-4.col-md-3.col-lg-2
+				.tables
+					tbody
+						tr.tr0
+							td#column0.maps
+						tr.tr1
+							td#column1.maps
+						tr.tr2
+							td#column2.maps
+						tr.tr3
+							td#column3.maps
+						tr.tr4
+							td#column4.maps
+						tr.tr5
+							td#column5.maps
+						tr.tr6
+							td#column6.maps
+						tr.tr7
+							td
+					br
+					br
+		.row
+			.col-md-12.radio-map-num Number of maps: 
 				.radio-inline
 					label
 						input#optionsRadios1(type='radio', name='optionsRadios', value='option1')
@@ -13,6 +188,10 @@ block content
 					label
 						input#optionsRadios2(type='radio', name='optionsRadios', value='option2')
 						| 2
+				.radio-inline
+					label
+						input#optionsRadios4(type='radio', name='optionsRadios', value='option3')
+						| 3
 				.radio-inline
 					label
 						input#optionsRadios4(type='radio', name='optionsRadios', value='option4')
@@ -61,45 +240,11 @@ block content
 					label
 						input#optionsRadios26(type='radio', name='optionsRadios', value='option26')
 						| 26
-		form
-			select(name='map-type')
-				option(value='Aerial') Bing Aerial
-				option(value='Auto') Bing Auto
-				option(value='Birdseye') Bing Birdseye
-				option(value='CollinsBart') Bing Collin's Bart
-				option(value='Mercator') Bing Mercator
-				option(value='OrdnanceSurvey') Bing Ordnance Survey
-				option(value='Road') Bing Road
-				option(value='gray') ESRI Gray
-				option(value='hybrid') ESRI Hybrid
-				option(value='national-geographic') ESRI National Geographic
-				option(value='oceans') ESRI Oceans
-				option(value='osm') ESRI Open Street Map
-				option(value='satellite') ESRI Satellite
-				option(value='topo') ESRI Topographic
-				option(value='HYBRID') Google Hybrid
-				option(value='ROAD') Google Road
-				option(value='SATELLITE') Google Satellite
-				option(value='TERRAIN') Google Terrain
-				option(value='hyb') Mapquest Hybrid
-				option(value='map') Mapquest Map
-				option(value='osm') Mapquest Open Street Map
-				option(value='sat') Mapquest Satellite
-				option(value='NORMAL') Nokia Normal
-				option(value='NORMAL_COMMUNITY') Nokia Normal Community
-				option(value='SATELLITE') Nokia Satellite
-				option(value='SATELLITE_COMMUNITY') Nokia Satellite Community
-				option(value='SMARTMAP') Nokia Smartmap
-				option(value='SMART_PT') Nokia Smart PT
-				option(value='TERRAIN') Nokia Terrain
-				option(value='TRAFFIC') Nokia Traffic
-		.row
-			.col-xs-6.col-sm-4.col-md-3.col-lg-2
-		.row
-			.col-xs-6.col-sm-4.col-md-3.col-lg-2
-		.row
-			.col-xs-6.col-sm-4.col-md-3.col-lg-2
-		.row
-			.col-xs-6.col-sm-4.col-md-3.col-lg-2
-		.row
-			.col-xs-6.col-sm-4.col-md-3.col-lg-2
+				.radio-inline
+					label
+						input#optionsRadios24(type='radio', name='optionsRadios', value='option28')
+						| 28
+				.radio-inline
+					label
+						input#optionsRadios26(type='radio', name='optionsRadios', value='option30')
+						| 30
