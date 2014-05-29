@@ -9,8 +9,6 @@ app.use(bodyParser());
 
 app.all('/', function(req, res) {
 	// normalize map value as an array
-	// req.body.googleMap = [].concat(req.body.googleMap || []);
-	// req.body.nokiaMap = [].concat(req.body.nokiaMap || []);
 
 	req.query.bing = [].concat(req.query.bing || []);
 	req.query.esri = [].concat(req.query.esri || []);
