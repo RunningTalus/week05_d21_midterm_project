@@ -19,8 +19,14 @@ app.all('/', function(req, res) {
 	// console.log('req.body', req.body);
 	console.log('req.query', req.query);
 
-	res.render('index');
+	res.render('index', {
+		bing:req.query.bing,
+		esri:req.query.esri,
+		google:req.query.google,
+		mapquest:req.query.mapquest,
+		nokia:req.query.nokia
 	});
+});
 
 var server = app.listen(7511, function() {
 	console.log('Express server listening on port ' + server.address().port);

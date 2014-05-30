@@ -28,20 +28,62 @@ h1 {
 }
 
 .container {
-/*	background-color: peru;
-	height: 5000px;
 	margin-top: 50px;
 	position: relative;
 	width: 100%;
-	border-left: 15px;*/
+	border-left: 15px;
 }
 
 .row {
-	/*width: 100%;*/
+	width: 100%;
 }
 
-.map-form input[type=checkbox]{
+.map-checkbox-form input[type=checkbox]{
+/*	display: inline-block;*/
 	float: left;
-	margin-right: 10px;
+	margin-left: 10px;
+	width: 100%;
 }
 
+/*.tr0 #col0 {
+	height: 100%;
+	width: 100%;
+	display: table-cell;
+}
+
+.tr1 #col1 .maps{}
+.tr2 #col2 .maps{}
+.tr3 #col3 .maps{}
+.tr4 #col4 .maps{}
+.tr5 #col5 .maps{}
+.tr6 #col6 .maps{}
+
+
+.map-dropdown{
+	width: 100%;
+}
+.table{
+	width: 100%;
+}
+td.maps{
+	vertical-align: top;
+}*/
+
+.map-radio-form{
+	width: 100%;
+}
+
+/*.map .bing .esri .google .mapquest .nokia {
+	height: 256px;
+	width: 256px;
+}*/
+
+/*.map-canvas{
+	height: 512px;
+	width: 512px;
+}*/
+
+.map{
+	height: 512px;
+	width: 512px;
+}
