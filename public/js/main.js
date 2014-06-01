@@ -99,18 +99,31 @@ $(document).ready(function() {
 
 
 // bing
+	var mapOptions;
+	var map;
+	var GetMap;
 
-	// $(document).on('load', function GetMap() {
-		
-	// 	var map = new Microsoft.Maps.Map(document.getElementById('bing'), {
-	// 		// credentials: "Your Bing Maps Key",
-	// 		credentials: 'AolIIreghmvKtz03i4M5zN9beapbOskEupo1x96mBA5aO12592OezyL1bTmyKehg',
-	// 		center: new Microsoft.Maps.Location(40.0079, -105.2348),
-	// 		disableZooming: true,
-	// 		mapTypeId: Microsoft.Maps.MapTypeId.aerial,
-	// 		zoom: 15	
-	// 	});
-	// });
+	window.onload = function(){
+
+		var mapOptions = {
+			credentials:"AolIIreghmvKtz03i4M5zN9beapbOskEupo1x96mBA5aO12592OezyL1bTmyKehg",
+			center:new Microsoft.Maps.Location(40.0079,-105.2348),
+			disableZooming:true,
+			// mapTypeId: Microsoft.Maps.MapTypeId.aerial,
+			zoom: 18,
+		};
+
+		$('.bing-type').each(function(){
+			mapOptions.mapTypeId = Microsoft.Maps.MapTypeId[$(this).attr('data-options-type')];
+			console.log($(this));
+			console.log(mapOptions.mapTypeId);
+			
+			var map = new Microsoft.Maps.Map($(this).get(0), mapOptions);
+		});
+
+	};
+	
+	// Microsoft.Maps.Map.event.addDomListener(window, 'load', GetMap);
 
 // esri
 
@@ -139,7 +152,7 @@ $(document).ready(function() {
 			center: new google.maps.LatLng(40.0079, -105.2348),
 			disableDefaultUI: true,
 			scrollwheel: false,
-			zoom: 3
+			zoom: 18
 		};
 
 		// console.log($('.google-type'));
@@ -148,34 +161,6 @@ $(document).ready(function() {
 			mapOptions.mapTypeId = google.maps.MapTypeId[$(this).attr('data-options-type')];
 			var map = new google.maps.Map($(this).get(0), mapOptions);
 		});
-
-	// for (var i=0; i<$('.google-type').length; i++){
-	// 	var result = $('.google-type').attr('data-options-type');
-	// 	console.log(result);
-
-	// }
-
-		// var mapValueFromDiv = $('.google-type').attr('value');
-		// 	console.log('This is the console.log for mapValueFromDiv: ' + mapValueFromDiv);
-		
-		// var mapValueFromDivUC = mapValueFromDiv.toUpperCase();
-			// console.log('This is the console.log for mapValueFromDivUC: ' + mapValueFromDivUC);
-
-		// var passMap = google.maps.MapTypeId[mapValueFromDiv];
-			// console.log('This is the console.log for passMap: ' + passMap);
-		
-
-
-
-		// console.log(mapOptions);
-		// $('.maptype').on('click', function(){
-		// 	var mapType = $(this).attr('data-maptype');
-		// 	map.setMapTypeId(google.maps.MapTypeId[mapType]);
-		// });
-		
-		// var mapElement = $('.map-canvas').get(0);
-		// var mapElement = document.getElementsByClassName('google');
-		// var map = new google.maps.Map(mapElement, mapOptions);
 
 	};
 

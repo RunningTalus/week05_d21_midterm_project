@@ -132,15 +132,15 @@ block content
 				.map-canvas
 				.generate-maps
 				for value in bing
-					div.map.bing(data-options-type=value) #{value}
+					div.map.bing-type(data-options-type=value) #{value}
 				for value in esri
-					div.map.esri(data-options-type=value) #{value}
+					div.map.esri-type(data-options-type=value) #{value}
 				for value in google
 					div.map.google-type(data-options-type=value) #{value}
 				for value in mapquest
-					div.map.mapquest(data-options-type=value) #{value}
+					div.map.mapquest-type(data-options-type=value) #{value}
 				for value in nokia
-					div.map.nokia(data-options-type=value) #{value}						
+					div.map.nokia-type(data-options-type=value) #{value}						
 		//- .row
 		//- 	.col-xs-6.col-sm-4.col-md-3.col-lg-2
 		//- 		.map-dropdown Choose map type:
