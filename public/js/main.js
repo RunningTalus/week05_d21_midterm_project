@@ -99,56 +99,53 @@ $(document).ready(function() {
 
 
 // bing
-	var mapOptions;
-	var map;
-	var GetMap;
 
-	window.onload = function(){
+	// window.onload = function(){
 
-		var mapOptions = {
-			credentials:"AolIIreghmvKtz03i4M5zN9beapbOskEupo1x96mBA5aO12592OezyL1bTmyKehg",
-			center:new Microsoft.Maps.Location(40.0079,-105.2348),
-			disableZooming:true,
-			// mapTypeId: Microsoft.Maps.MapTypeId.aerial,
-			zoom: 18,
-		};
-
-		$('.bing-type').each(function(){
-			mapOptions.mapTypeId = Microsoft.Maps.MapTypeId[$(this).attr('data-options-type')];
-			console.log($(this));
-			console.log(mapOptions.mapTypeId);
-			
-			var map = new Microsoft.Maps.Map($(this).get(0), mapOptions);
-		});
-
+	var bingMapOptions = {
+		credentials:"AolIIreghmvKtz03i4M5zN9beapbOskEupo1x96mBA5aO12592OezyL1bTmyKehg",
+		center:new Microsoft.Maps.Location(40.0079,-105.2348),
+		disableZooming:true,
+		showBreadcrumb: false,
+		showDashboard: false,
+		zoom: 18
 	};
-	
-	// Microsoft.Maps.Map.event.addDomListener(window, 'load', GetMap);
+
+	$('.bing-type').each(function(){
+		bingMapOptions.mapTypeId = Microsoft.Maps.MapTypeId[$(this).attr('data-options-type')];
+		var map = new Microsoft.Maps.Map($(this).get(0), bingMapOptions);
+	});
+
+	// };
 
 // esri
 
-// require(['esri/map','dojo/domReady!'], function(Map) { 
+	// window.onload = function (){
+	require(['esri/map',
+	'dojo/domReady!'
+	], function(Map) { 
 	
-// 	map = new Map('esri', {
-// 		basemap: 'national-geographic',
-// 		center: [-105.2348, 40.0079],
-// 		zoom: 9
-	
-// 	});
-// });
+		var esriMapOptions = {
+			// basemap: 'national-geographic',
+			center: [-105.2348, 40.0079],
+			zoom: 17
+		};
+
+		$('.esri-type').each(function(){
+			esriMapOptions.basemap = $(this).attr('data-options-type');
+			var map = new Map($(this).get(0), esriMapOptions);
+		});
+
+	});
+	// };	
 
 
 // google
 
-	var initialMap;
-	var map;
-	var mapElement;
-	var mapOptions;
-
-	var initialMap = function (){
+	var googleMap = function (){
 		google.maps.visualRefresh = true;
 
-		var mapOptions = {
+		var googleMapOptions = {
 			center: new google.maps.LatLng(40.0079, -105.2348),
 			disableDefaultUI: true,
 			scrollwheel: false,
@@ -158,13 +155,13 @@ $(document).ready(function() {
 		// console.log($('.google-type'));
 		$('.google-type').each(function(){
 			// console.log($(this).attr('data-options-type'));
-			mapOptions.mapTypeId = google.maps.MapTypeId[$(this).attr('data-options-type')];
-			var map = new google.maps.Map($(this).get(0), mapOptions);
+			googleMapOptions.mapTypeId = google.maps.MapTypeId[$(this).attr('data-options-type')];
+			var map = new google.maps.Map($(this).get(0), googleMapOptions);
 		});
 
 	};
 
-	google.maps.event.addDomListener(window, 'load', initialMap);
+	google.maps.event.addDomListener(window, 'load', googleMap);
 
 // mapquest
 
