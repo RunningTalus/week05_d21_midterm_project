@@ -166,21 +166,27 @@ $(document).ready(function() {
 // mapquest
 
 
-	// MQA.EventUtil.observe(window, 'load', function() {
-	  
-	//   var options= {
-	// 		elt: document.getElementById('mapquest'),
-	// 		zoom: 3,                                  
-	// 		latLng: {
-	// 			lat:40.0079, lng:-105.2348 
-	// 			},  
-	// 		mtype:'sat',                              
-	// 		zoomOnDoubleClick: true,										               
-	//   };
+	MQA.EventUtil.observe(window, 'load', function() {
+		
+		var mapquestOptions = {
+			// elt: document.getElementById('mapquest'),
+			zoom: 18,                                  
+			latLng: {
+				lat:40.0079, lng:-105.2348 
+			},  
+			// mtype:'sat',
+			zoomOnDoubleClick: false
+		};
 
-	// 	window.map = new MQA.TileMap(options);
+		$('.mapquest-type').each(function(){
+			mapquestOptions.elt = [$(this).attr('data-options-type')];
+			mapquestOptions.mtype = $(this).get(0);
+			console.log($(this));
+		});
 
-	// });
+		window.map = new MQA.TileMap(mapquestOptions);
+
+	});
 
 // nokia
 

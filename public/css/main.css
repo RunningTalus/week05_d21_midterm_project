@@ -50,7 +50,7 @@ h1 {
 }
 
 .map {
-	height: 128px;
+	height: 512px;
 	position: relative;
-	width: 128px;
+	width: 512px;
 }
