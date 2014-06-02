@@ -96,6 +96,15 @@ $(document).ready(function() {
 		}
 	});
 
+$('.map').height($('.map').width());
+//sets the map height to the map width
+//relies on bootstrap to do the heavy lifting
+
+$(window).resize(function() {
+	$('.map').height($('.map').width());
+});
+//on window resize the map height is set to the map width
+
 
 // bing
 
