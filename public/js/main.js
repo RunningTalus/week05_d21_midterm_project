@@ -97,10 +97,8 @@ $(document).ready(function() {
 	});
 
 
-
 // bing
 
-	// window.onload = function(){
 
 	var bingMapOptions = {
 		credentials:"AolIIreghmvKtz03i4M5zN9beapbOskEupo1x96mBA5aO12592OezyL1bTmyKehg",
@@ -113,14 +111,12 @@ $(document).ready(function() {
 
 	$('.bing-type').each(function(){
 		bingMapOptions.mapTypeId = Microsoft.Maps.MapTypeId[$(this).attr('data-options-type')];
-		var map = new Microsoft.Maps.Map($(this).get(0), bingMapOptions);
+		bingEl = $(this).get(0);
+		var map = new Microsoft.Maps.Map(bingEl, bingMapOptions);
 	});
-
-	// };
 
 // esri
 
-	// window.onload = function (){
 	require(['esri/map',
 	'dojo/domReady!'
 	], function(Map) { 
@@ -133,16 +129,16 @@ $(document).ready(function() {
 
 		$('.esri-type').each(function(){
 			esriMapOptions.basemap = $(this).attr('data-options-type');
-			var map = new Map($(this).get(0), esriMapOptions);
+			var esriEl = $(this).get(0);
+			var map = new Map(esriEl, esriMapOptions);
 		});
 
 	});
-	// };	
 
 
 // google
 
-	var googleMap = function (){
+	var googleMap = function () {
 		google.maps.visualRefresh = true;
 
 		var googleMapOptions = {
@@ -152,11 +148,10 @@ $(document).ready(function() {
 			zoom: 18
 		};
 
-		// console.log($('.google-type'));
-		$('.google-type').each(function(){
-			// console.log($(this).attr('data-options-type'));
+		$('.google-type').each(function() {
 			googleMapOptions.mapTypeId = google.maps.MapTypeId[$(this).attr('data-options-type')];
-			var map = new google.maps.Map($(this).get(0), googleMapOptions);
+			googleEl = $(this).get(0);
+			var map = new google.maps.Map(googleEl, googleMapOptions);
 		});
 
 	};
@@ -178,28 +173,33 @@ $(document).ready(function() {
 			zoomOnDoubleClick: false
 		};
 
-		$('.mapquest-type').each(function(){
-			mapquestOptions.elt = [$(this).attr('data-options-type')];
-			mapquestOptions.mtype = $(this).get(0);
-			console.log($(this));
+		$('.mapquest-type').each(function() {
+			mapquestOptions.mtype = $(this).attr('data-options-type');
+			mapquestOptions.elt = $(this).get(0);
+		
+			window.map = new MQA.TileMap(mapquestOptions);
 		});
-
-		window.map = new MQA.TileMap(mapquestOptions);
 
 	});
 
 // nokia
 
-	// // nokia.Settings.set("app_id", "YOUR_APPID");
-	// nokia.Settings.set('app_id', '77VM5B8BjUkIb4tsZbhe');
-	// // nokia.Settings.set("app_code", "YOUR_TOKEN");
-	// nokia.Settings.set('app_code', 'X47sOlRqLiQfpL9wBk458Q');
+	// nokia.Settings.set("app_id", "YOUR_APPID");
+	nokia.Settings.set('app_id', '77VM5B8BjUkIb4tsZbhe');
+	// nokia.Settings.set("app_code", "YOUR_TOKEN");
+	nokia.Settings.set('app_code', 'X47sOlRqLiQfpL9wBk458Q');
+	
+	var nokiaOptions = {
+		// baseMapType: nokia.maps.map.Display.SATELLITE,
+		center: [40.0079, -105.2348],
+		zoomLevel: 10	
+	};
 
-	// var map = new nokia.maps.map.Display(document.getElementById('nokia'), {
+	$('.nokia-type').each(function() {
+		var nokiaEl = $(this).get(0);
+		nokiaOptions.baseMapType = nokia.maps.map.Display[$(this).attr('data-options-type')];
 		
-	// 	baseMapType: nokia.maps.map.Display.SATELLITE,
-	// 	center: [40.0079, -105.2348],
-	// 	zoomLevel: 10
-	// });
+		var map = new nokia.maps.map.Display(nokiaEl, nokiaOptions);
+	});
 
 });
