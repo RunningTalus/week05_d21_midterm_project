@@ -123,22 +123,27 @@ block content
 					br
 					input(button type="submit" class="btn btn-success")
 		.row
-			for value in bing
-				.col-sm-offset-1.col-md-2.map-wrapper
-					.map.bing-type(data-options-type=value)
-			for value in esri
-				.col-sm-offset-1.col-md-2.map-wrapper
-					.map.esri-type(data-options-type=value)
-			for value in google
-				.col-sm-offset-1.col-md-2.map-wrapper
-					.map.google-type(data-options-type=value)
-			for value in mapquest
-				.col-sm-offset-1.col-md-2.map-wrapper
-					.map.mapquest-type(data-options-type=value)
-			for value in nokia
-				.col-sm-offset-1.col-md-2.map-wrapper
-					.map.nokia-type(data-options-type=value)
-
+			.col-sm-offset-1
+				for value in bing
+					.map-shell.col-md-2
+						.map-wrapper
+							.map.bing-type(data-options-type=value)
+				for value in esri
+					.map-shell.col-md-2
+						.map-wrapper
+							.map.esri-type(data-options-type=value)
+				for value in google
+					.map-shell.col-md-2
+						.map-wrapper
+							.map.google-type(data-options-type=value)
+				for value in mapquest
+					.map-shell.col-md-2
+						.map-wrapper
+							.map.mapquest-type(data-options-type=value)
+				for value in nokia
+					.map-shell.col-md-2
+						.map-wrapper
+							.map.nokia-type(data-options-type=value)
 //- 		.map-dropdown Select map type:
 //- 			form
 //- 				select(name="map-type")
