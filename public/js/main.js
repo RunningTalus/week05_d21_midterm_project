@@ -105,6 +105,11 @@ $(window).resize(function() {
 });
 //on window resize the map height is set to the map width
 
+//inject dropdown menu via Handlebars
+// var dropdownTemplate = $('.dropdown-template');
+// var dropdownTemplateText = dropdownTemplate.html();
+// var renderDropdown = Handlebars.compile(dropdownTemplateText);
+
 
 // bing
 

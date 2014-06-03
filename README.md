@@ -3,12 +3,27 @@ Forms/Search
 	Add Lat/Long
 
 
-Map Compare
+Compare Map Vendor API's
 -Bing
 -ESRI
 -Google
 -Mapquest
 -Nokia
+
+NOTE: 
+	-Why are 'data-options-type' attributes present for esri, mapquest, and nokia? 
+		-new containers being injected by API's???
+			-remove 'data-options-type' and inject my own title?
+	-add Nav bar
+		-add About this Project/Why, About Me, References/Links/Resources...
+	-add CSS neatline around maps
+	-style checkbox buttons
+	-disable internal controls
+	-specify initial zoom levels
+	-link pan/scroll
+	-investigate native search box controls
+	-investigate ability to set location
+	-dropdown Handlebars.js subview, nested views, partial
 
 Directions/Routing
 -ESRI
@@ -28,37 +43,3 @@ Geocoding
 // on complete or on ready for each map type
 // asyncjs or other callback structure to delay loading each map until all maps are done.  
 // static mapping options from all providers
-// Nokia Here stability add delay for rendering, OTF issues in the past
-
-// Style Tables
-// Submit Request
-// Loop through number of maps requested for a # count
-// Use jQuery to render tables OTF
-// Default to one main view
-
-// iPhone Retina
-	//Stack Vertically
-		// x rows
-		// 1 column
-		// MAX 1 map/viewport
-
-// Phones
-	//Stack Vertically
-		// x rows
-		// 1 row
-		// 2 columns
-		// MAX 2 maps/viewport
-
-// Tablets
-	// 1 row
-	// 2 columns
-	// 4 maps/viewport 2x2
-
-// Medium Devices
-
-<!-- $('.map.bing').each(function(){console.log($(this).attr('data-options-type'));}) -->
-
-
-
-
-
