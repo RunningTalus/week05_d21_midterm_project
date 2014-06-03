@@ -11,9 +11,6 @@ Compare Map Vendor API's
 -Nokia
 
 NOTE: 
-	-Why are 'data-options-type' attributes present for esri, mapquest, and nokia? 
-		-new containers being injected by API's???
-			-remove 'data-options-type' and inject my own title?
 	-add Nav bar
 		-add About this Project/Why, About Me, References/Links/Resources...
 	-add CSS neatline around maps

@@ -1,114 +1,143 @@
 extends layout
 
 block content
-	h1 Welcome to MyMapNow.com!
 	.container-fluid
-		.map-checkbox-form
+		h1 MyMapNow
+		.row
+			.map-checkbox-form
 			form(method="get")
-				div.row.col-md-12.form-group
-					label Load ALL 30 Vendor Maps
-						input(type="checkbox", class="all-maps", name="", value="")
-				div.row.col-md-12.form-group
+				.col-sm-offset-1.col-md-1.form-group
 					label Load ALL Bing Maps
 						input(type="checkbox", class="all-bing", name="", value="")
 					br
-					label Bing Aerial
+					br
+					label Aerial
 						input(type="checkbox", class="bing", name="bing", value="Aerial")
-					label Bing Auto
+					br
+					label Auto
 						input(type="checkbox", class="bing", name="bing", value="Auto")
-					label Bing Birdseye
+					br
+					label Birdseye
 						input(type="checkbox", class="bing", name="bing", value="Birdseye")
-					label Bing Collin's Bart
+					br
+					label Collin's Bart
 						input(type="checkbox" class="bing", name="bing", value="CollinsBart")
-					label Bing Mercator
+					br
+					label Mercator
 						input(type="checkbox", class="bing", name="bing", value="Mercator")
-					label Bing Ordnance Survey
+					br
+					label Ordnance Survey
 						input(type="checkbox", class="bing", name="bing", value="OrdnanceSurvey")
-					label Bing Road
+					br
+					label Road
 						input(type="checkbox", class="bing", name="bing", value="Road")
-				div.row.col-md-12.form-group
+				.col-sm-offset-1.col-md-1.form-group
 					label Load ALL ESRI Maps
 						input(type="checkbox", class="all-esri", name="", value="")
 					br
-					label ESRI Gray
-						input(type="checkbox", class="esri", name="esri", value="gray")
-					label ESRI Hybrid
-						input(type="checkbox", class="esri", name="esri", value="hybrid")
-					label ESRI National Geographic
-						input(type="checkbox", class="esri", name="esri", value="national-geographic")
-					label ESRI Oceans
-						input(type="checkbox", class="esri", name="esri", value="oceans")
-					label ESRI Open Street Map
-						input(type="checkbox", class="esri", name="esri", value="osm")
-					label ESRI Satellite
-						input(type="checkbox", class="esri", name="esri", value="satellite")
-					label ESRI Topographic
-						input(type="checkbox", class="esri", name="esri", value="topo")
 					br
-				div.row.col-md-12.form-group
+					label Gray
+						input(type="checkbox", class="esri", name="esri", value="gray")
+					br
+					label Hybrid
+						input(type="checkbox", class="esri", name="esri", value="hybrid")
+					br
+					label National Geographic
+						input(type="checkbox", class="esri", name="esri", value="national-geographic")
+					br
+					label Oceans
+						input(type="checkbox", class="esri", name="esri", value="oceans")
+					br
+					label Open Street Map
+						input(type="checkbox", class="esri", name="esri", value="osm")
+					br
+					label Satellite
+						input(type="checkbox", class="esri", name="esri", value="satellite")
+					br
+					label Topographic
+						input(type="checkbox", class="esri", name="esri", value="topo")
+				.col-sm-offset-1.col-md-1.form-group
 					label Load ALL Google Maps
 						input(type="checkbox", class="all-google", name="", value="")
 					br
-					label Google Hybrid
-						input(type="checkbox", class="google", name="google", value="HYBRID")
-					label Google Road
-						input(type="checkbox", class="google", name="google", value="ROAD")
-					label Google Satellite
-						input(type="checkbox", class="google", name="google", value="SATELLITE")
-					label Google Terrain
-						input(type="checkbox", class="google", name="google", value="TERRAIN")
 					br
-				div.row.col-md-12.form-group
+					label Hybrid
+						input(type="checkbox", class="google", name="google", value="HYBRID")
+					br
+					label Road
+						input(type="checkbox", class="google", name="google", value="ROAD")
+					br
+					label Satellite
+						input(type="checkbox", class="google", name="google", value="SATELLITE")
+					br
+					label Terrain
+						input(type="checkbox", class="google", name="google", value="TERRAIN")
+				.col-sm-offset-1.col-md-1.form-group
 					label Load ALL Mapquest Maps
 						input(type="checkbox", class="all-mapquest", name="", value="")
 					br
-					label Mapquest Hybrid
-						input(type="checkbox", class="mapquest", name="mapquest", value="hyb")
-					label Mapquest Map
-						input(type="checkbox", class="mapquest", name="mapquest", value="map")
-					label Mapquest Open Street Map
-						input(type="checkbox", class="mapquest", name="mapquest", value="osm")
-					label Mapquest Satellite
-						input(type="checkbox", class="mapquest", name="mapquest", value="sat")
 					br
-				div.row.col-md-12.form-group
+					label Hybrid
+						input(type="checkbox", class="mapquest", name="mapquest", value="hyb")
+					br
+					label Map
+						input(type="checkbox", class="mapquest", name="mapquest", value="map")
+					br
+					label Open Street Map
+						input(type="checkbox", class="mapquest", name="mapquest", value="osm")
+					br
+					label Satellite
+						input(type="checkbox", class="mapquest", name="mapquest", value="sat")
+				.col-sm-offset-1.col-md-1.form-group
 					label Load ALL Nokia Maps
 						input(type="checkbox", class="all-nokia", name="", value="")
 					br
-					label Nokia Normal
-						input(type="checkbox", class="nokia", name="nokia", value="NORMAL")
-					label Nokia Normal Community
-						input(type="checkbox", class="nokia", name="nokia", value="NORMAL_COMMUNITY")
-					label Nokia Satellite
-						input(type="checkbox", class="nokia", name="nokia", value="SATELLITE")
-					label Nokia Satellite Community
-						input(type="checkbox", class="nokia", name="nokia", value="SATELLITE_COMMUNITY")
-					label Nokia Smartmap
-						input(type="checkbox", class="nokia", name="nokia", value="SMARTMAP")
-					label Nokia Smart PT
-						input(type="checkbox", class="nokia", name="nokia", value="SMART_PT")
-					label Nokia Terrain
-						input(type="checkbox", class="nokia", name="nokia", value="TERRAIN")
-					label Nokia Traffic
-						input(type="checkbox", class="nokia", name="nokia", value="TRAFFIC")
 					br
-					input(type="submit")
+					label Normal
+						input(type="checkbox", class="nokia", name="nokia", value="NORMAL")
+					br
+					label Normal Community
+						input(type="checkbox", class="nokia", name="nokia", value="NORMAL_COMMUNITY")
+					br
+					label Satellite
+						input(type="checkbox", class="nokia", name="nokia", value="SATELLITE")
+					br
+					label Satellite Community
+						input(type="checkbox", class="nokia", name="nokia", value="SATELLITE_COMMUNITY")
+					br
+					label Smartmap
+						input(type="checkbox", class="nokia", name="nokia", value="SMARTMAP")
+					br
+					label Smart PT
+						input(type="checkbox", class="nokia", name="nokia", value="SMART_PT")
+					br
+					label Terrain
+						input(type="checkbox", class="nokia", name="nokia", value="TERRAIN")
+					br
+					label Traffic
+						input(type="checkbox", class="nokia", name="nokia", value="TRAFFIC")
+				.col-sm-offset-1.col-md-1.form-group
+					label Load ALL 30 Vendor Map Types
+						input(type="checkbox", class="all-maps", name="", value="")
+					br
+					br
+					input(button type="submit" class="btn btn-success")
 		.row
 			for value in bing
-				.col-md-3.map-wrapper
-					.map.bing-type(data-options-type=value) #{value}
+				.col-sm-offset-1.col-md-2.map-wrapper
+					.map.bing-type(data-options-type=value)
 			for value in esri
-				.col-md-3.map-wrapper
-					.map.esri-type(data-options-type=value) #{value}
+				.col-sm-offset-1.col-md-2.map-wrapper
+					.map.esri-type(data-options-type=value)
 			for value in google
-				.col-md-3.map-wrapper
-					.map.google-type(data-options-type=value) #{value}
+				.col-sm-offset-1.col-md-2.map-wrapper
+					.map.google-type(data-options-type=value)
 			for value in mapquest
-				.col-md-3.map-wrapper
-					.map.mapquest-type(data-options-type=value) #{value}
+				.col-sm-offset-1.col-md-2.map-wrapper
+					.map.mapquest-type(data-options-type=value)
 			for value in nokia
-				.col-md-3.map-wrapper
-					.map.nokia-type(data-options-type=value) #{value}
+				.col-sm-offset-1.col-md-2.map-wrapper
+					.map.nokia-type(data-options-type=value)
 
 //- 		.map-dropdown Select map type:
 //- 			form
