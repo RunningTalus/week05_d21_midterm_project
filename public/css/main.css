@@ -30,6 +30,18 @@ h1 {
 	height: 30px;
 }*/
 
+/*.map-title {
+	border: white 50px;
+	position: absolute;
+	width: 100%;
+}
+
+h3 {
+	height:20px;
+	width: 100%;
+	z-index: 2;
+}*/
+
 .map-shell {
 	background-color: white;
 	border: 10px;

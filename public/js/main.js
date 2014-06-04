@@ -116,18 +116,18 @@ $(window).resize(function() {
 
 	var bingMapOptions = {
 		credentials: "AolIIreghmvKtz03i4M5zN9beapbOskEupo1x96mBA5aO12592OezyL1bTmyKehg",
-		center: new Microsoft.Maps.Location(40.0079,-105.2348),
+		center: new Microsoft.Maps.Location(36.1208,-115.1722),
 		enableClickableLogo: false,
 		enableSearchLogo: false,
 		disableKeyboardInput: true,
 		disableMouseInput: true,
-		disablePanning: true,
+		disablePanning: false,
 		disableTouchInput: true,
-		disableUserInput: true,
-		disableZooming: true,
+		disableUserInput: false,
+		disableZooming: false,
 		showBreadcrumb: false,
 		showCopyright: true,
-		showDashboard: false,
+		showDashboard: true,
 		showMapTypeSelector: false,
 		showScalebar: true,
 		zoom: 18
@@ -137,22 +137,31 @@ $(window).resize(function() {
 		bingMapOptions.mapTypeId = Microsoft.Maps.MapTypeId[$(this).attr('data-options-type')];
 		bingEl = $(this).get(0);
 		var map = new Microsoft.Maps.Map(bingEl, bingMapOptions);
+		// var title = $(this).attr('data-options-type');
+		// console.log(title);
+
 	});
+
+	// $('.map-wrapper').hover( function () {
+	// 	$(this).append( $( "title" ) );
+	// },
+	// 	function() {
+	// 		$(this).find( "span:last" ).remove();
+	// 	}
+	// );
 
 // esri
 
-	require(['esri/map',
-	'dojo/domReady!'
-	], function(Map) { 
+	require(['esri/map', "esri/dijit/Scalebar", 'dojo/domReady!'], function(Map, Scalebar) { 
 	
 		var esriMapOptions = {
 			// basemap: 'national-geographic',
-			center: [-105.2348, 40.0079],
+			center: [-115.1722, 36.1208],
 			logo: true,
-			nav: false,
-			slider: false,
+			nav: true,
+			slider: true,
 			smartNavigation: false,
-			zoom: 17
+			zoom: 15
 		};
 
 		$('.esri-type').each(function(){
@@ -160,17 +169,25 @@ $(window).resize(function() {
 			var esriEl = $(this).get(0);
 			var map = new Map(esriEl, esriMapOptions);
 
+			var scalebar = new Scalebar({
+			map: map,
+				// "dual" displays both miles and kilmometers
+				// "english" is the default, which displays miles
+				// use "metric" for kilometers
+				scalebarUnit: "dual"
+			});
+
 			map.on('load', function() {
-				map.disablePan();
+				// map.disablePan();
 				map.disableScrollWheelZoom();
 				map.disableRubberBandZoom();
 				map.disableClickRecenter();
 				map.disableDoubleClickZoom();
-				map.disableShiftDoubleClickZoom();
+				// map.disableShiftDoubleClickZoom();
 				map.disableKeyboardNavigation();
 				map.hidePanArrows();
-				map.hideZoomSlider();
-				map.disableMapNavigation();
+				// map.hideZoomSlider();
+				// map.disableMapNavigation();
 			});
 		});
 
@@ -185,20 +202,20 @@ $(window).resize(function() {
 		google.maps.visualRefresh = true;
 
 		var googleMapOptions = {
-			center: new google.maps.LatLng(40.0079, -105.2348),
+			center: new google.maps.LatLng(36.1208, -115.1722),
 			keyboardShortcuts: false,
 			disableDefaultUI: true,
 			disableDoubleClickZoom: true,
-			draggable: false,
+			draggable: true,
 			keyboardShortcuts: false,
 			mapTypeControl: false,
 			overViewMapControl: false,
-			panControl: false,
+			panControl: true,
 			rotateControl: false,
-			scaleControl: false,
+			scaleControl: true,
 			scrollwheel: false,
 			streetViewControl: false,
-			zoomControl: false,
+			zoomControl: true,
 			zoom: 18
 		};
 
@@ -221,14 +238,14 @@ $(window).resize(function() {
 			bestFitMargin: 0,
 			// elt: document.getElementById('mapquest'),                                
 			latLng: {
-				lat:40.0079, lng:-105.2348 
+				lat:36.1208, lng:-115.1722 
 			},  
 			minimized: false,
 			// mtype:'sat',
-			setDraggable: false,
+			setDraggable: true,
 			useRightClick: false,
 			zoom: 18,  
-			zoomOnDoubleClick: false
+			zoomOnDoubleClick: true
 		};
 
 		$('.mapquest-type').each(function() {
@@ -249,15 +266,24 @@ $(window).resize(function() {
 	
 	var nokiaOptions = {
 		// baseMapType: nokia.maps.map.Display.SATELLITE,
-		center: [40.0079, -105.2348],
-		zoomLevel: 10	
+		// components: [
+		// 	new nokia.maps.map.component.ZoomBar(),
+		// 	new nokia.maps.map.component.ScaleBar()
+		// ],
+
+		center: [36.1208, -115.1722],
+		zoomLevel: 10,
 	};
 
 	$('.nokia-type').each(function() {
 		var nokiaEl = $(this).get(0);
 		nokiaOptions.baseMapType = nokia.maps.map.Display[$(this).attr('data-options-type')];
-		
 		var map = new nokia.maps.map.Display(nokiaEl, nokiaOptions);
+		map.addComponent( new nokia.maps.map.component.zoom.DoubleClick() );
+		map.addComponent( new nokia.maps.map.component.panning.Drag() );
+		map.addComponent( new nokia.maps.map.component.panning.Kinetic() );
+		map.addComponent( new nokia.maps.map.component.ZoomBar() );
+		map.addComponent( new nokia.maps.map.component.ScaleBar() );
 	});
 
 });
