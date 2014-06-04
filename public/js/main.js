@@ -115,11 +115,21 @@ $(window).resize(function() {
 
 
 	var bingMapOptions = {
-		credentials:"AolIIreghmvKtz03i4M5zN9beapbOskEupo1x96mBA5aO12592OezyL1bTmyKehg",
-		center:new Microsoft.Maps.Location(40.0079,-105.2348),
-		disableZooming:true,
+		credentials: "AolIIreghmvKtz03i4M5zN9beapbOskEupo1x96mBA5aO12592OezyL1bTmyKehg",
+		center: new Microsoft.Maps.Location(40.0079,-105.2348),
+		enableClickableLogo: false,
+		enableSearchLogo: false,
+		disableKeyboardInput: true,
+		disableMouseInput: true,
+		disablePanning: true,
+		disableTouchInput: true,
+		disableUserInput: true,
+		disableZooming: true,
 		showBreadcrumb: false,
+		showCopyright: true,
 		showDashboard: false,
+		showMapTypeSelector: false,
+		showScalebar: true,
 		zoom: 18
 	};
 
@@ -138,6 +148,10 @@ $(window).resize(function() {
 		var esriMapOptions = {
 			// basemap: 'national-geographic',
 			center: [-105.2348, 40.0079],
+			logo: true,
+			nav: false,
+			slider: false,
+			smartNavigation: false,
 			zoom: 17
 		};
 
@@ -145,7 +159,22 @@ $(window).resize(function() {
 			esriMapOptions.basemap = $(this).attr('data-options-type');
 			var esriEl = $(this).get(0);
 			var map = new Map(esriEl, esriMapOptions);
+
+			map.on('load', function() {
+				map.disablePan();
+				map.disableScrollWheelZoom();
+				map.disableRubberBandZoom();
+				map.disableClickRecenter();
+				map.disableDoubleClickZoom();
+				map.disableShiftDoubleClickZoom();
+				map.disableKeyboardNavigation();
+				map.hidePanArrows();
+				map.hideZoomSlider();
+				map.disableMapNavigation();
+			});
 		});
+
+
 
 	});
 
@@ -157,8 +186,19 @@ $(window).resize(function() {
 
 		var googleMapOptions = {
 			center: new google.maps.LatLng(40.0079, -105.2348),
+			keyboardShortcuts: false,
 			disableDefaultUI: true,
+			disableDoubleClickZoom: true,
+			draggable: false,
+			keyboardShortcuts: false,
+			mapTypeControl: false,
+			overViewMapControl: false,
+			panControl: false,
+			rotateControl: false,
+			scaleControl: false,
 			scrollwheel: false,
+			streetViewControl: false,
+			zoomControl: false,
 			zoom: 18
 		};
 
@@ -178,12 +218,16 @@ $(window).resize(function() {
 	MQA.EventUtil.observe(window, 'load', function() {
 		
 		var mapquestOptions = {
-			// elt: document.getElementById('mapquest'),
-			zoom: 18,                                  
+			bestFitMargin: 0,
+			// elt: document.getElementById('mapquest'),                                
 			latLng: {
 				lat:40.0079, lng:-105.2348 
 			},  
+			minimized: false,
 			// mtype:'sat',
+			setDraggable: false,
+			useRightClick: false,
+			zoom: 18,  
 			zoomOnDoubleClick: false
 		};
 

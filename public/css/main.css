@@ -7,7 +7,7 @@ body.img-responsive {
 }
 
 .container-fluid {
-	padding-left: 40px;
+
 }
 
 h1 {
@@ -19,23 +19,24 @@ h1 {
 }
 
 .map-checkbox-form input[type=checkbox] {
-	position: relative;
 	text-align: left;
-	top: 1px;
-	width: 100%;
 }
 
 .map {
 	width: 100%;
+	background-color: white
 }
 /*.dropdown-menu {
 	height: 30px;
 }*/
 
 .map-shell {
+	background-color: white;
 	border: 10px;
 	border-style: solid;
 	border-color: white;
+	padding: 1px solid;
+	padding-color: black;
 	margin: 5px;
 	width: 100%;
 }

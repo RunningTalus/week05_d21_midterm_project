@@ -11,16 +11,38 @@ Compare Map Vendor API's
 -Nokia
 
 NOTE: 
-	-add Nav bar
+	
+	Nav Bar
 		-add About this Project/Why, About Me, References/Links/Resources...
-	-add CSS neatline around maps
-	-style checkbox buttons
-	-disable internal controls
-	-specify initial zoom levels
-	-link pan/scroll
-	-investigate native search box controls
-	-investigate ability to set location
-	-dropdown Handlebars.js subview, nested views, partial
+	
+	Style
+		-style checkboxes
+		-add map vendor icons
+		-add CSS neatline around maps
+		-prepend h2 data-options-type into map-shell
+
+	Remove MapQuest Pan Controls
+		-disable internal controls (MQA.TileMap.removeControl) method
+	
+	Searchboxes
+		-create placename search box
+			-pipe search parameters into native API search
+				-request geocodes
+		-create lat/long search box
+		-set location for mapOptions
+	
+	Zoom
+		-determine zoom min-max per maptype
+		-link pan/scroll
+
+	Disable
+		-vendor links in all maps
+
+	Enable HTML5 geolocation
+		-pipe into all 5 API's for initial view
+	
+	Create Dropdown to change maptypes
+		-dropdown Handlebars.js subview, nested views, partial
 
 Directions/Routing
 -ESRI
