@@ -282,7 +282,7 @@ $(window).resize(function() {
 	$('.nokia-type').each(function() {
 		var nokiaEl = $(this).get(0);
 		nokiaMapOptions.baseMapType = nokia.maps.map.Display[$(this).attr('data-options-type')];
-		nokiaMapOptions.center = [40.0179,-105.2798];
+		// nokiaMapOptions.center = [40.0179,-105.2798];
 		
 		var map = new nokia.maps.map.Display(nokiaEl, nokiaMapOptions);
 		map.addComponent( new nokia.maps.map.component.zoom.DoubleClick() );
