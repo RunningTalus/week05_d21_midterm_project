@@ -135,6 +135,7 @@ $(window).resize(function() {
 
 	$('.bing-type').each(function(){
 		bingMapOptions.mapTypeId = Microsoft.Maps.MapTypeId[$(this).attr('data-options-type')];
+		// bingMapOptions.center = new Microsoft.Maps.Location(40.0179,-105.2798);
 		bingEl = $(this).get(0);
 		var map = new Microsoft.Maps.Map(bingEl, bingMapOptions);
 		// var title = $(this).attr('data-options-type');
@@ -167,6 +168,7 @@ $(window).resize(function() {
 		$('.esri-type').each(function(){
 			esriMapOptions.basemap = $(this).attr('data-options-type');
 			var esriEl = $(this).get(0);
+			// esriMapOptions.center = [-105.2798, 40.0179];
 			var map = new Map(esriEl, esriMapOptions);
 
 			var scalebar = new Scalebar({
@@ -221,6 +223,7 @@ $(window).resize(function() {
 
 		$('.google-type').each(function() {
 			googleMapOptions.mapTypeId = google.maps.MapTypeId[$(this).attr('data-options-type')];
+			// googleMapOptions.center = new google.maps.LatLng(40.0179,-105.2798);
 			googleEl = $(this).get(0);
 			var map = new google.maps.Map(googleEl, googleMapOptions);
 		});
@@ -251,6 +254,7 @@ $(window).resize(function() {
 		$('.mapquest-type').each(function() {
 			mapquestOptions.mtype = $(this).attr('data-options-type');
 			mapquestOptions.elt = $(this).get(0);
+			// mapquestOptions.latLng = {lat:40.0179, lng:-105.2798};
 		
 			window.map = new MQA.TileMap(mapquestOptions);
 		});
@@ -264,7 +268,7 @@ $(window).resize(function() {
 	// nokia.Settings.set("app_code", "YOUR_TOKEN");
 	nokia.Settings.set('app_code', 'X47sOlRqLiQfpL9wBk458Q');
 	
-	var nokiaOptions = {
+	var nokiaMapOptions = {
 		// baseMapType: nokia.maps.map.Display.SATELLITE,
 		// components: [
 		// 	new nokia.maps.map.component.ZoomBar(),
@@ -272,13 +276,15 @@ $(window).resize(function() {
 		// ],
 
 		center: [36.1208, -115.1722],
-		zoomLevel: 10,
+		zoomLevel: 15,
 	};
 
 	$('.nokia-type').each(function() {
 		var nokiaEl = $(this).get(0);
-		nokiaOptions.baseMapType = nokia.maps.map.Display[$(this).attr('data-options-type')];
-		var map = new nokia.maps.map.Display(nokiaEl, nokiaOptions);
+		nokiaMapOptions.baseMapType = nokia.maps.map.Display[$(this).attr('data-options-type')];
+		nokiaMapOptions.center = [40.0179,-105.2798];
+		
+		var map = new nokia.maps.map.Display(nokiaEl, nokiaMapOptions);
 		map.addComponent( new nokia.maps.map.component.zoom.DoubleClick() );
 		map.addComponent( new nokia.maps.map.component.panning.Drag() );
 		map.addComponent( new nokia.maps.map.component.panning.Kinetic() );
