@@ -28,6 +28,6 @@ app.all('/', function(req, res) {
 	});
 });
 
-var server = app.listen(7511, function() {
+var server = app.listen(process.env.PORT||7511, function() {
 	console.log('Express server listening on port ' + server.address().port);
 });
