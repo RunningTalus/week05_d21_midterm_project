@@ -1,16 +1,18 @@
-body.img-responsive {
+.img-responsive {
 	background: url('/img/bg-pattern.png') repeat;
+	color: white;
 	height: auto;
 	margin: 0;
 	max-width: 100%;
 }
 
 .container-fluid {
+	color: white;
 
 }
 
 h1 {
-	color: white;
+	/*color: white;*/
 	text-align: center;
 }
 
@@ -25,13 +27,13 @@ h1 {
 
 .map {
 	background-color: white;
-	color: black;
+	/*color: black;*/
 	position: relative;
 	width: 100%;
 }
 
 h4 {
-	color: black;
+	color: white;
 	text-align: center;
 }
 /*.dropdown-menu {
@@ -52,19 +54,19 @@ h3 {
 
 .map-shell {
 	background-color: white;
-	border: 10px;
+	color: black;
+	border: 1px;
 	border-style: solid;
-	border-color: white;
-	padding: 1px solid;
-	padding-color: black;
+	border-color: black;
 	margin: 5px;
+	padding: 1px solid;
 	width: 100%;
 }
 
-/*.map-wrapper {
-	border: 5px;
-	margin: 5px;
-}*/
+.map-wrapper {
+	/*border-bottom: 10px;*/
+	margin-bottom: 15px;
+}
 
 /*.map-radio-form {
 	width: 100%;
