@@ -1,6 +1,5 @@
 body.img-responsive {
 	background: url('/img/bg-pattern.png') repeat;
-	color: white;
 	height: auto;
 	margin: 0;
 	max-width: 100%;
@@ -11,6 +10,7 @@ body.img-responsive {
 }
 
 h1 {
+	color: white;
 	text-align: center;
 }
 
@@ -19,12 +19,20 @@ h1 {
 }
 
 .map-checkbox-form input[type=checkbox] {
+	color: white;
 	text-align: left;
 }
 
 .map {
+	background-color: white;
+	color: black;
+	position: relative;
 	width: 100%;
-	background-color: white
+}
+
+h4 {
+	color: black;
+	text-align: center;
 }
 /*.dropdown-menu {
 	height: 30px;
