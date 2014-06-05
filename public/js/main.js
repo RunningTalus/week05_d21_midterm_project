@@ -293,3 +293,11 @@ $(window).resize(function() {
 	});
 
 });
+
+	// var vegas = function(){
+	// 	esriMapOptions.center = [-105.2798, 40.0179];
+	// 	googleMapOptions.center = new google.maps.LatLng(40.0179,-105.2798);
+	// 	mapquestOptions.latLng = {lat:40.0179, lng:-105.2798};
+	// 	nokiaMapOptions.center = [40.0179,-105.2798];
+	// 	bingMapOptions.center = new Microsoft.Maps.Location(40.0179,-105.2798);
+	// };

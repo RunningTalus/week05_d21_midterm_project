@@ -16,7 +16,6 @@ NOTE:
 		-add About this Project/Why, About Me, References/Links/Resources...
 	
 	Style
-		-style checkboxes
 		-add map vendor icons
 		-add CSS neatline around maps
 		-prepend h2 data-options-type into map-shell
