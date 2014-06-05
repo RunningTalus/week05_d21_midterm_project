@@ -116,7 +116,7 @@ $(window).resize(function() {
 
 	var bingMapOptions = {
 		credentials: "AolIIreghmvKtz03i4M5zN9beapbOskEupo1x96mBA5aO12592OezyL1bTmyKehg",
-		center: new Microsoft.Maps.Location(36.1208,-115.1722),
+		center: new Microsoft.Maps.Location(40.0179,-105.2798),
 		enableClickableLogo: false,
 		enableSearchLogo: false,
 		disableKeyboardInput: true,
@@ -157,7 +157,7 @@ $(window).resize(function() {
 	
 		var esriMapOptions = {
 			// basemap: 'national-geographic',
-			center: [-115.1722, 36.1208],
+			center: [-105.2798, 40.0179],
 			logo: true,
 			nav: true,
 			slider: true,
@@ -204,7 +204,7 @@ $(window).resize(function() {
 		google.maps.visualRefresh = true;
 
 		var googleMapOptions = {
-			center: new google.maps.LatLng(36.1208, -115.1722),
+			center: new google.maps.LatLng(40.0179, -105.2798),
 			keyboardShortcuts: false,
 			disableDefaultUI: true,
 			disableDoubleClickZoom: true,
@@ -241,7 +241,7 @@ $(window).resize(function() {
 			bestFitMargin: 0,
 			// elt: document.getElementById('mapquest'),                                
 			latLng: {
-				lat:36.1208, lng:-115.1722 
+				lat:40.0179, lng:-105.2798 
 			},  
 			minimized: false,
 			// mtype:'sat',
@@ -275,7 +275,7 @@ $(window).resize(function() {
 		// 	new nokia.maps.map.component.ScaleBar()
 		// ],
 
-		center: [36.1208, -115.1722],
+		center: [40.0179, -105.2798],
 		zoomLevel: 15,
 	};
 

@@ -20,6 +20,11 @@ h1 {
 	width: 100%;
 }
 
+#logo {
+	height: 50px;
+}
+
+
 .map-checkbox-form input[type=checkbox] {
 	color: white;
 	text-align: left;

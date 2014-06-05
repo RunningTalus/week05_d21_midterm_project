@@ -10,9 +10,13 @@ block content
 				.map-checkbox-form
 					form(method="get")
 						.col-md-2.form-group
-							label 
+							img(src= "/img/bing.png" id= "logo" class="img-responsive" alt="Responsive image")
+							br
+							br
+							label
 								input(type="checkbox", class="all-bing", name="", value="")
 								|  Load ALL Bing Maps
+							br
 							br
 							br
 							label
@@ -43,9 +47,13 @@ block content
 								input(type="checkbox", class="bing", name="bing", value="Road")
 								|  Road
 						.col-md-2.form-group
+							img(src= "/img/esri.png" id= "logo" class="img-responsive" alt="Responsive image")
+							br
+							br
 							label
 								input(type="checkbox", class="all-esri", name="", value="")
 								|  Load ALL ESRI Maps
+							br
 							br
 							br
 							label
@@ -76,6 +84,9 @@ block content
 								input(type="checkbox", class="esri", name="esri", value="topo")
 								|  Topographic
 						.col-md-2.form-group
+							img(src= "/img/google.png" id= "logo" class="img-responsive" alt="Responsive image")
+							br
+							br
 							label
 								input(type="checkbox", class="all-google", name="", value="")
 								|  Load ALL Google Maps
@@ -97,6 +108,9 @@ block content
 								input(type="checkbox", class="google", name="google", value="TERRAIN")
 								|  Terrain
 						.col-md-2.form-group
+							img(src= "/img/mapquest-icon-med.png" id= "logo" class="img-responsive" alt="Responsive image")
+							br
+							br
 							label
 								input(type="checkbox", class="all-mapquest", name="", value="")
 								|  Load ALL Mapquest Maps
@@ -118,9 +132,12 @@ block content
 								input(type="checkbox", class="mapquest", name="mapquest", value="sat")
 								|  Satellite
 						.col-md-2.form-group
+							img(src= "/img/nokia.jpg" id= "logo" class="img-responsive" alt="Responsive image")
+							br
+							br
 							label
 								input(type="checkbox", class="all-nokia", name="", value="")
-								|  Load ALL Nokia Maps
+								|  Load ALL Nokia Here Maps
 							br
 							br
 							label
@@ -155,12 +172,28 @@ block content
 								input(type="checkbox", class="nokia", name="nokia", value="TRAFFIC")
 								|  Traffic
 						.col-md-2.form-group
+							br
+							br
+							br
+							br
+							br
 							label
 								input(type="checkbox", class="all-maps", name="", value="")
 								|  Load ALL 30 Vendor Map Types
 							br
 							br
 							input(button type="submit" class="btn btn-success")
+							br
+							br
+							img(src= "/img/bing.png" id= "logo" class="img-responsive" alt="Responsive image")
+							br
+							img(src= "/img/esri.png" id= "logo" class="img-responsive" alt="Responsive image")
+							br
+							img(src= "/img/google.png" id= "logo" class="img-responsive" alt="Responsive image")
+							br
+							img(src= "/img/mapquest-icon-med.png" id= "logo" class="img-responsive" alt="Responsive image")
+							br
+							img(src= "/img/nokia.jpg" id= "logo" class="img-responsive" alt="Responsive image")
 		.row
 			.col-sm-offset-2
 				for value in bing
@@ -188,6 +221,14 @@ block content
 						.map-wrapper
 							h4= value
 							.map.nokia-type(data-options-type=value)
+				br
+				br
+				br
+				br
+				br
+				br
+		.row
+			.col-md-12
 //- 		.map-dropdown Select map type:
 //- 			form
 //- 				select(name="map-type")
